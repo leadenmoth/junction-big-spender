@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Grommet } from 'grommet';
+import 'typeface-roboto';
 
 const myTheme = {
   global: {
