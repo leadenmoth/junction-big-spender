@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 
 namespace BigSpender
 {
@@ -23,8 +24,7 @@ namespace BigSpender
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllersWithViews();
-
+            services.AddControllersWithViews().AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

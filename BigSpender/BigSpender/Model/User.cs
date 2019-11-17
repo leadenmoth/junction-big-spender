@@ -11,6 +11,8 @@ namespace BigSpender.Model
         public string Name { get; set; }
         public decimal MonthlyIncome { get; set; }
         public List<UserLivingCost> UserLivingCosts { get; set; }
+        public List<Account> Accounts { get; set; }
+        public List<Transaction> Transactions { get; set; }
         public enum FinancialLevel {InDebt, Unemployed, InMortgage, Comfortable }
         public enum Difficulty {Easy, Hard}
     }

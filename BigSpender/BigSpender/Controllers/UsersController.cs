@@ -31,7 +31,7 @@ namespace BigSpender.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(long id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.Users.Include(user => user.UserLivingCosts).Include(user => user.Accounts).Include(user => user.Transactions).FirstOrDefaultAsync(user => user.Id == id);
 
             if (user == null)
             {
