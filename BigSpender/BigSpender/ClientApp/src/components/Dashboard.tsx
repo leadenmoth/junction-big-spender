@@ -43,7 +43,7 @@ const Dashboard: FC<RouteComponentProps> = observer(() => {
             margin={{ vertical: '10px' }}
             color="brand"
           >{`€ ${user.currentBalance}`}</Paragraph>
-          <Button primary color="brand" href="spend" label="Make a purchase" />
+          <Button primary color="brand" href="store" label="Make a purchase" />
         </Box>
 
         <Box

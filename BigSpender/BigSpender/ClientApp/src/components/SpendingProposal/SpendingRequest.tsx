@@ -1,6 +1,5 @@
-import React, { FC, useState } from 'react';
-import { RouteComponentProps, Redirect, navigate } from '@reach/router';
-import { observer } from 'mobx-react';
+import React, { FC } from 'react';
+import { RouteComponentProps, navigate } from '@reach/router';
 import { Box, Heading, Paragraph, Button } from 'grommet';
 
 const SpendingRequest: FC<RouteComponentProps> = () => {
@@ -37,6 +36,7 @@ const SpendingRequest: FC<RouteComponentProps> = () => {
         color="status-ok"
         label="Okay, I changed my mind. I don't need that."
         margin={{ vertical: '10px' }}
+        onClick={e => navigate('changed')}
       />
       <Button
         color="brand"

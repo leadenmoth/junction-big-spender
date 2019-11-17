@@ -1,13 +1,5 @@
 import React, { FC, useState } from 'react';
-import {
-  Box,
-  Button,
-  Distribution,
-  Heading,
-  Select,
-  Text,
-  Paragraph
-} from 'grommet';
+import { Box, Button, Heading, Select, Paragraph } from 'grommet';
 import { RouteComponentProps, Link } from '@reach/router';
 
 const Setup: FC<RouteComponentProps> = () => {

@@ -1,14 +1,14 @@
-import React, { FC, useState } from 'react';
-import { RouteComponentProps } from '@reach/router';
+import React, { FC } from 'react';
+import { RouteComponentProps, navigate } from '@reach/router';
 import {
   Box,
   Heading,
   Paragraph,
-  Button,
   Table,
   TableHeader,
   TableRow,
-  TableCell
+  TableCell,
+  Button
 } from 'grommet';
 
 const SpendRejected: FC<RouteComponentProps> = () => {
@@ -53,6 +53,15 @@ const SpendRejected: FC<RouteComponentProps> = () => {
         think that you will not use it a lot. That makes the ‘cost-per-lifetime’
         for this product <strong>very high</strong>.
       </Paragraph>
+
+      <Box align="center" direction="row" gap="small">
+        <Button label="Ignore and pay" />
+        <Button
+          primary
+          label="Cancel purchase"
+          onClick={e => navigate('changed')}
+        />
+      </Box>
     </Box>
   );
 };
