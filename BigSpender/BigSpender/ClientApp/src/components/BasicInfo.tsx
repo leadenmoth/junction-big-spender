@@ -51,10 +51,18 @@ const BasicInfo: FC<RouteComponentProps> = observer(() => {
   };
 
   return (
-    <Box align="center">
+    <Box
+      align="center"
+      background="#202020"
+      animation="slideRight"
+      pad="medium"
+    >
       <Heading level="1">Let's get to know each other.</Heading>
 
-      <Paragraph>How can I call you?</Paragraph>
+      <Paragraph textAlign="start" size="large">
+        How can I call you?
+      </Paragraph>
+
       <FormField label="Name">
         <TextInput
           placeholder="Enter your name"
