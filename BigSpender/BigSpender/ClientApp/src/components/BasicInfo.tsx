@@ -2,11 +2,8 @@ import React, { FC } from 'react';
 import {
   Box,
   Button,
-  Distribution,
   FormField,
   Heading,
-  Select,
-  Text,
   TextInput,
   Paragraph,
   Form

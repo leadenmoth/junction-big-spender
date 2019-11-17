@@ -17,7 +17,13 @@ const SavingPlans: FC = observer(() => {
         Saving Plans
       </Heading>
 
-      <Box pad="small" background="neutral-2" direction="row" round="small">
+      <Box
+        pad="small"
+        background="neutral-2"
+        direction="row"
+        round="small"
+        margin={{ vertical: 'small' }}
+      >
         <Box direction="column" width="75%">
           <Heading level="4">Pocket Money Plan</Heading>
           <Paragraph size="small">
@@ -28,7 +34,13 @@ const SavingPlans: FC = observer(() => {
         <img src={piggyBank} />
       </Box>
 
-      <Box pad="small" background="neutral-1" direction="row" round="small">
+      <Box
+        pad="small"
+        background="neutral-1"
+        direction="row"
+        round="small"
+        margin={{ vertical: 'small' }}
+      >
         <Box direction="column" width="75%">
           <Heading level="4">“My First Cat” Plan</Heading>
           <Paragraph size="small">
