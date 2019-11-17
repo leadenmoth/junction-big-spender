@@ -12,10 +12,10 @@ const SpendingRequest: FC<RouteComponentProps> = () => {
 
   return (
     <Box
-      alignContent="center"
+      align="center"
       background="#202020"
       pad="large"
-      style={{ height: '100%' }}
+      style={{ height: '100vh' }}
     >
       <Heading level="1">You are about to spend</Heading>
       <Paragraph
@@ -34,7 +34,7 @@ const SpendingRequest: FC<RouteComponentProps> = () => {
       <Button
         primary
         color="status-ok"
-        label="Okay, I changed my mind. I don't need that."
+        label="Nope, I changed my mind. I don't need that."
         margin={{ vertical: '10px' }}
         onClick={e => navigate('changed')}
       />

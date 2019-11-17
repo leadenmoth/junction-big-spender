@@ -8,7 +8,7 @@ const ChangedMyMind: FC<RouteComponentProps> = () => {
       align="center"
       background="#202020"
       pad="large"
-      style={{ height: '100%' }}
+      style={{ height: '100vh' }}
       animation="fadeIn"
     >
       <Heading level="1">Great!</Heading>
